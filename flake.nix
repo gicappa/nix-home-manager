@@ -44,23 +44,33 @@
 
         # Create /etc/zshrc that loads the nix-darwin environment.
         programs.zsh.enable = true;
-
 	environment.systemPackages = [ pkgs.neofetch pkgs.vim ];
     };
+
     homeconfig = {pkgs, ...}: {
         # this is internal compatibility configuration 
         # for home-manager, don't change this!
         home.stateVersion = "23.05";
+
         # Let home-manager install and manage itself.
         programs.home-manager.enable = true;
 
-        home.packages = with pkgs; [];
-        home.sessionVariables = {
-            EDITOR = "vim";
+        programs.zsh = {
+            enable = true;
+            shellAliases = {
+                dswitch = "darwin-rebuild switch --flake ~/.config/nix";
+            };
         };
-        home.file = {
-            ".vimrc".source = ./configs/vimrc;
-            ".zshrc".source = ./configs/zshrc;
+
+        home = {
+            packages = with pkgs; [];
+            sessionVariables = {
+                EDITOR = "vim";
+            };
+            file = {
+                ".vimrc".source = ./configs/vimrc;
+                ".zshrc".source = ./configs/zshrc;
+            };
         };
     };
   in
