@@ -58,8 +58,10 @@
         home.sessionVariables = {
             EDITOR = "vim";
         };
-        home.file.".vimrc".source = ./configs/vimrc;
-        home.file.".zshrc".source = ./configs/zshrc;
+        home.file = {
+            ".vimrc".source = ./configs/vimrc;
+            ".zshrc".source = ./configs/zshrc;
+        };
     };
   in
   {
