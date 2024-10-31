@@ -13,3 +13,6 @@ To use the repo on a MBP it is necessary to:
 ## Links
 - ()[https://davi.sh/til/nix/nix-macos-setup/]
 - ()[https://nix-community.github.io/home-manager/options.xhtml]
+
+# Notes
+- nix run nix-darwin --extra-experimental-features nix-command --extra-experimental-features flakes -- switch --flake ~/.config/nix
