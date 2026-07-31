@@ -213,7 +213,7 @@
       programs.zsh = {
         enable = true;
         shellAliases = {
-          dswitch = "darwin-rebuild switch --flake ~/.config/nix";
+          dswitch = "sudo darwin-rebuild switch --flake ~/.config/nix";
         };
       };
 
