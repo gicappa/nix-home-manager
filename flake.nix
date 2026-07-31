@@ -84,6 +84,7 @@
           "norwoodj/tap"
           "spacelift-io/spacelift"
           "qmk/qmk"
+          "rjyo/moshi"
         ];
 
         # Command-line formulae (from `brew bundle dump` on 2026-07-31).
@@ -124,6 +125,7 @@
           "mas"
           "mill"
           "mole"
+          "moshi-hook"
           "node"
           "ollama"
           "opentofu"
@@ -164,7 +166,6 @@
           "acidtib/kamal/kamal"
           "anomalyco/tap/opencode"
           "norwoodj/tap/helm-docs"
-          "spacelift-io/spacelift/spacectl"
         ];
 
         # GUI apps and fonts stay in Homebrew (casks). From the same dump.
@@ -195,6 +196,9 @@
           "telegram-desktop"
           "visual-studio-code"
           "zed"
+          # spacectl moved from a formula to a cask in the spacelift-io tap.
+          # Requires the tap to be trusted once: brew trust --tap spacelift-io/spacelift
+          "spacelift-io/spacelift/spacectl"
         ];
 
         # Mac App Store apps are intentionally left unmanaged (mas is finicky
