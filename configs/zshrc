@@ -123,7 +123,7 @@ EDITOR=vim
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 [ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env"
 export PATH="$PATH:/Applications/IntelliJ IDEA.app/Contents/MacOS"
-export PATH="$PATH:/opt/homebrew/Cellar/ruby/4.0.2/bin/"
+export PATH="$PATH:/opt/homebrew/opt/ruby/bin"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
