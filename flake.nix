@@ -125,6 +125,7 @@
           "mas"
           "mill"
           "mole"
+          "mosh"
           "moshi-hook"
           "node"
           "ollama"
