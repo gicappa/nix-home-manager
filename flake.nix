@@ -128,6 +128,7 @@
           "mosh"
           "moshi-hook"
           "node"
+          "nmap"
           "ollama"
           "opentofu"
           "pandoc"
@@ -175,7 +176,6 @@
           "bruno"
           "caffeine"
           "codex"
-          "dbeaver-community"
           "docker-desktop"
           "emacs-app"
           "firefox"
@@ -183,7 +183,6 @@
           "font-source-code-pro-for-powerline"
           "gcc-arm-embedded"
           "ghostty"
-          "insomnia"
           "intellij-idea"
           "iterm2"
           "maccy"
@@ -196,7 +195,6 @@
           "scrivener"
           "telegram-desktop"
           "visual-studio-code"
-          "zed"
           # spacectl moved from a formula to a cask in the spacelift-io tap.
           # Requires the tap to be trusted once: brew trust --tap spacelift-io/spacelift
           "spacelift-io/spacelift/spacectl"
