@@ -198,6 +198,7 @@
           # spacectl moved from a formula to a cask in the spacelift-io tap.
           # Requires the tap to be trusted once: brew trust --tap spacelift-io/spacelift
           "spacelift-io/spacelift/spacectl"
+          "dynatrace-oss/tap/dtctl"
         ];
 
         # Mac App Store apps are intentionally left unmanaged (mas is finicky
